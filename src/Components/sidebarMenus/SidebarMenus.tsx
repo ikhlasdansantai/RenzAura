@@ -1,6 +1,6 @@
 import { Icon } from "@iconify/react";
 import { Link } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 interface SidebarMenuProps {
   icon: any;
@@ -15,6 +15,7 @@ export default function SidebarMenus({ icon, path, children, isActive }: Sidebar
 
     const handleDarkMode = () => {
       toggleDarkMode(!darkMode);
+      document.querySelector("html")?.classList.toggle("dark");
     };
 
     return (
