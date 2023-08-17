@@ -1,6 +1,7 @@
 import BetaMessage from "../BetaMessage/BetaMessage";
 import ProfileCard from "../ProfileCard/ProfileCard";
 import SidebarMenus from "../sidebarMenus/SidebarMenus";
+import SocialMedia from "../sidebarMenus/SocialMedia";
 
 export default function CTAButton() {
   const navMenus = [
@@ -36,6 +37,8 @@ export default function CTAButton() {
     },
   ];
 
+  const socialMediaIcon: string[] = ["uiw:facebook", "cib:instagram"];
+
   return (
     <div>
       <button
@@ -67,6 +70,7 @@ export default function CTAButton() {
               );
             })}
           </ul>
+          <SocialMedia icons={socialMediaIcon} />
           <BetaMessage />
         </nav>
       </aside>
