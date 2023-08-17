@@ -1,0 +1,12 @@
+.profile-card::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -14px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  width: 100%;
+  opacity: 0.2;
+  background-color: #999;
+}
