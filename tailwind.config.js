@@ -13,6 +13,7 @@ export default {
           primaryBlack: "#121212",
           sedondBlack: "#262626",
           primaryText: "#737373",
+          secondaryText: "#A3A3A3",
           lineColor: "#999",
         },
       },
