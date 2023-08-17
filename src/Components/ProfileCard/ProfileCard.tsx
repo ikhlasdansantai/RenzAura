@@ -7,8 +7,8 @@ export default function ProfileCard() {
         <img src={profile} alt="profileIMG" height="100%" width="100%" className="block max-w-full" />
       </figure>
       <div className="name-bio-wrapper mt-3">
-        <h2 className="text-[20px] leading-5">Renz_Aura</h2>
-        <span className="text-slate-600 text-[14px]">@Renz_aura</span>
+        <h2 className="text-[20px] leading-5 dark:text-white">Renz_Aura</h2>
+        <span className="text-slate-600 text-[14px] dark:text-primaryText">@Renz_aura</span>
       </div>
     </div>
   );
