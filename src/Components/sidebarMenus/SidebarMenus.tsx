@@ -15,6 +15,7 @@ export default function SidebarMenus({ icon, path, children, isActive }: Sidebar
 
     const handleDarkMode = () => {
       toggleDarkMode(!darkMode);
+      document.querySelector('html')?.classList.toggle('dark')
     };
 
     return (
