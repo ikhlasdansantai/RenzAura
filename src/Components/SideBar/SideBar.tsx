@@ -2,8 +2,11 @@ import BetaMessage from "../BetaMessage/BetaMessage";
 import ProfileCard from "../ProfileCard/ProfileCard";
 import SidebarMenus from "../sidebarMenus/SidebarMenus";
 import SocialMedia from "../sidebarMenus/SocialMedia";
+import { useState } from "react";
 
 export default function CTAButton() {
+  const [active, isActive] = useState(false);
+
   const navMenus = [
     {
       icon: "fluent-mdl2:home",
@@ -39,6 +42,10 @@ export default function CTAButton() {
 
   const socialMediaIcon: string[] = ["uiw:facebook", "cib:instagram"];
 
+  const handleClick = () => {
+    isActive(!active);
+  };
+
   return (
     <div>
       <button
@@ -71,7 +78,7 @@ export default function CTAButton() {
             })}
           </ul>
           <SocialMedia icons={socialMediaIcon} />
-          <BetaMessage />
+          <BetaMessage active={active} handleClick={handleClick} />
         </nav>
       </aside>
     </div>
