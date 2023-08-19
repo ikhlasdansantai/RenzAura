@@ -3,7 +3,7 @@ import "./ProfileCard.css";
 export default function ProfileCard() {
   return (
     <div className="relative profile-card mb-6">
-      <figure className="w-28  rounded-full overflow-hidden ">
+      <figure className="w-28 rounded-full overflow-hidden ">
         <img src={profile} alt="profileIMG" height="100%" width="100%" className="block max-w-full" />
       </figure>
       <div className="name-bio-wrapper mt-3">
