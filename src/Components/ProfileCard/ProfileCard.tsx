@@ -1,8 +1,8 @@
 import profile from "../../assets/profile.webp";
-import "./ProfileCard.css";
+
 export default function ProfileCard() {
   return (
-    <div className="relative profile-card mb-6">
+    <div className="relative profile-card mb-6 underlineText">
       <figure className="w-28 rounded-full overflow-hidden ">
         <img src={profile} alt="profileIMG" height="100%" width="100%" className="block max-w-full" />
       </figure>
