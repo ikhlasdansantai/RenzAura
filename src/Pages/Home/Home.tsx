@@ -19,8 +19,8 @@ export default function Home() {
           <span className="dark:text-secondText">Lihat Selengkapnya</span>
         </div>
         <div className="container-cards mt-6">
-          <div className="card">
-            <figure className="w-60">
+          <div className="card w-[20rem]">
+            <figure className="">
               <img src={igPost} alt="instagramPostPict" height="100%" width="100%" className="block max-w-full" />
             </figure>
             <div className="titles flex items-center gap-2 mt-2">
