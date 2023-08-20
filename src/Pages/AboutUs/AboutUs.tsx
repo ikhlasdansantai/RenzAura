@@ -1,3 +1,5 @@
+import { Icon } from "@iconify/react";
+
 export default function AboutUs() {
   return (
     <div className="min-h-screen">
@@ -12,14 +14,36 @@ export default function AboutUs() {
         </p>
       </div>
       <div id="statistics-wrappers" className="mt-10">
-        <div className="flex gap-1 items-center">
+        <div className="flex gap-1 items-center ">
           <span className="text-xs">🔴</span>
           <p className="text-slate-600 text-sm sm:text-[16px] dark:text-primary">Statistik Website Kami</p>
         </div>
-        <div className="statistics-containers mt-4">
-          <div className="statisticsc-card dark:bg-[#262626] p-4">
+        <div className="statistics-containers mt-4 grid grid-cols-2  gap-6 lg:grid-cols-3">
+          <div className="statistics-card rounded-lg dark:bg-[#262626] p-4 border shadow-md dark:border-primaryBlack">
             <h2 className="dark:text-white">Pengunjung</h2>
-            <span className="text-slate-600">210K +</span>
+            <span className="text-slate-600">210K+</span>
+          </div>
+          <div className="statistics-card rounded-lg dark:bg-[#262626] p-4 border shadow-md dark:border-primaryBlack">
+            <h2 className="dark:text-white">Produk Terjual</h2>
+            <span className="text-slate-600">999</span>
+          </div>
+          <div className="statistics-card col-span-2 lg:col-span-1 rounded-lg dark:bg-[#262626] p-4 border shadow-md lg:max-w-[20rem] dark:border-primaryBlack">
+            <h2 className="dark:text-white">Pengunjung Aktif</h2>
+            <span className="text-slate-600">989</span>
+          </div>
+        </div>
+        <div id="join-with-us" className="mt-6">
+          <div className="statistics-card col-span-2 rounded-lg dark:bg-[#262626] p-4 flex gap-3 border shadow-md dark:border-primaryBlack max-w-[21rem]">
+            <Icon icon="mingcute:rocket-line" className="icon text-[30px]" />
+            <div className="titles">
+              <h2 className="dark:text-white">Ingin Bergabung Bersama Kami?</h2>
+              <button
+                type="button"
+                className="mt-3 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-[#525252] dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+              >
+                Gabung Sekarang
+              </button>
+            </div>
           </div>
         </div>
       </div>
