@@ -82,7 +82,7 @@ export default function CTAButton() {
 
       {/* Open Nav Menus ( Mobile ) */}
       {navMobileActive && (
-        <aside className="px-4 ">
+        <aside className="px-4 sm:hidden">
           <nav>
             <ProfileCard />
             <ul className="space-y-3 flex flex-col font-medium">
