@@ -1,10 +1,11 @@
+import "./index.css";
 import React from "react";
 import ReactDOM from "react-dom/client";
-import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import NotFoundPage from "./Pages/NotFoundPage/NotFoundPage";
 import Home from "./Pages/Home/Home";
 import Root from "./Pages/Root/Root";
+import AboutUs from "./Pages/AboutUs/AboutUs";
 
 const router = createBrowserRouter([
   {
@@ -18,7 +19,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/tentangKami",
-        element: <h2>Hello TentangKami</h2>,
+        element: <AboutUs />,
       },
       {
         path: "/pakaian",
