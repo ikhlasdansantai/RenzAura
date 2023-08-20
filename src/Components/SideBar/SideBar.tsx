@@ -4,9 +4,8 @@ import SidebarMenus from "../sidebarMenus/SidebarMenus";
 import SocialMedia from "../sidebarMenus/SocialMedia";
 import { useState } from "react";
 
-export default function CTAButton() {
+export default function CTAButton({ handleNavMobile, navMobileActive }: any): JSX.Element {
   const [active, isActive] = useState(false);
-  const [navMobileActive, isNavMobileActive] = useState(false);
 
   interface NavMenu {
     icon: string;
@@ -53,10 +52,6 @@ export default function CTAButton() {
     isActive(!active);
   };
 
-  const handleNavMobile = () => {
-    isNavMobileActive((navMobileActive) => !navMobileActive);
-  };
-
   return (
     <div>
       <nav className="flex items-center justify-between px-4 py-4 w-full">
@@ -82,7 +77,7 @@ export default function CTAButton() {
 
       {/* Open Nav Menus ( Mobile ) */}
       {navMobileActive && (
-        <aside className="px-4 sm:hidden">
+        <aside className="px-4 sm:hidden pb-8">
           <nav>
             <ProfileCard />
             <ul className="space-y-3 flex flex-col font-medium">
