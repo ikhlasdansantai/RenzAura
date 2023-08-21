@@ -26,12 +26,12 @@ export default function CTAButton({ handleNavMobile, navMobileActive }: any): JS
     },
     {
       icon: "icon-park-outline:clothes-cardigan",
-      path: "/Pakaian",
+      path: "/pakaian",
       children: "Pakaian",
     },
     {
       icon: "ph:bowl-food-bold",
-      path: "/Makanan",
+      path: "/makanan",
       children: "Makanan",
     },
     {
