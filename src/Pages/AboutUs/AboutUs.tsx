@@ -6,11 +6,12 @@ export default function AboutUs() {
       <div className="titles underlineText">
         <h1 className="text-4xl dark:text-white">Mari Berkenalan! 👋</h1>
         <p className="mt-4 text-slate-600 text-sm sm:text-[16px] dark:text-secondText leading-6">
-          Berawal dari sebuah keresahan, memunculkan ide dan solusi baru untuk mengembangkan sesuatu sesuai kemampuan kami, dan kebetulan kemampuan kami adalah selain berjualan, kami juga membangun platform website untuk sebagai media
-          promosi kami, yang bisa diharapkan bisa memikat user/buyer baru untuk membeli produk di toko/usaha kami.
+          Berawal dari sebuah keresahan, memunculkan ide dan solusi baru untuk mengembangkan sesuatu sesuai kemampuan kami, dan kebetulan kemampuan kami adalah selain berjualan, Di samping menjalankan bisnis, kami juga memiliki keahlian
+          dalam membangun platform website yang memikat, untuk sebagai media promosi kami,Kami ingin menghadirkan pengalaman yang menarik bagi calon pelanggan dan membantu meningkatkan daya tarik bisnis Anda.
         </p>
         <p className="mt-2 text-slate-600 text-sm sm:text-[16px] dark:text-secondText leading-6">
-          Kalian juga bisa menitipkan produk di platform kami, sebagai media untuk promosi juga, jika tertarik kalian bisa menghubungi kami di nomor WA yang sudah kami cantumkan di website ini. kami tunggu kerjasamanya :D
+          Kami juga memberikan peluang kepada Anda untuk menampilkan produk-produk unggulan di platform kami. Dengan ini, Anda dapat memperluas jangkauan promosi dan menarik minat baru dari pengguna kami. Jika Anda tertarik untuk
+          bekerjasama, jangan ragu untuk menghubungi kami melalui nomor WhatsApp yang sudah kami sertakan di halaman website kami. Kami dengan antusias menanti peluang kerjasama yang penuh potensi ini. Terima kasih! 😊
         </p>
       </div>
       <div id="statistics-wrappers" className="mt-10">
