@@ -4,6 +4,8 @@ import igPost2 from "../../assets/instagram_post/2.webp";
 import userImgProfile from "../../assets/profile_users/368172058_200014439727799_4548607432220709411_n.jpg";
 import "../../index.css";
 import HomeCard from "../../Components/Cards/HomeCard";
+import "./home.css";
+import Title from "../../Components/Title/Title";
 
 export default function Home() {
   interface HomeContentDatas {
@@ -38,12 +40,12 @@ export default function Home() {
   ];
 
   return (
-    <div id="home" className="min-h-screen ">
+    <div id="home">
       <div className="titles underlineText">
-        <h1 className="text-4xl dark:text-white">Hi, Selamat Datang! 🎉</h1>
+        <Title>Hi, Selamat Datang! 🎉</Title>
         <p className="dark:text-secondText mt-2">Memperkenalkan sebuah platform untuk kamu yang mau belanja dengan mudah dengan harga yang murah meriah, selamat berbelanja :D.</p>
       </div>
-      <div id="contents" className="mt-10">
+      <div id="contents" className="mt-10 overflow-hidden">
         <div className="container flex justify-between items-center">
           <div className="info flex items-center gap-2">
             <Icon icon="cib:instagram" className="icon" />
@@ -51,7 +53,7 @@ export default function Home() {
           </div>
           <span className="dark:text-secondText">Lihat Selengkapnya</span>
         </div>
-        <div className="container-cards mt-6 flex gap-10">
+        <div className="container-cards flex flex-row w-94 mt-6 gap-0 snap-x snap-proximity overflow-x-scroll overflow-y-hidden pb-3 xl:snap-none xl:overflow-hidden">
           {homeContentDatas.map((data, index) => {
             return <HomeCard key={index} imgProfile={data.imgProfile} imgPost={data.imgPost} author={data.author} date={data.date} link={data.link} />;
           })}
