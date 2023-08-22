@@ -1,18 +1,20 @@
-interface BetaMessagProps {
-  handleClick: any;
-  active: boolean;
-}
+import { useState } from "react";
 
-export default function BetaMessage({ handleClick, active }: BetaMessagProps): JSX.Element {
+export default function BetaMessage() {
+  const [msgShow, setMsgShow] = useState(false);
+  const handleMsgShow = () => {
+    setMsgShow(!msgShow);
+  };
+
   return (
-    <div id="dropdown-cta" className={`${active ? "hidden" : "block"} p-4 mt-6 rounded-lg bg-blue-50 dark:bg-blue-900"`} role="alert">
+    <div id="dropdown-cta" className={`${msgShow ? "hidden" : "block"} p-4 mt-6 rounded-lg bg-blue-50 dark:bg-blue-900"`} role="alert">
       <div className="flex items-center mb-3">
         <span className="bg-orange-100 text-orange-800 text-sm font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-orange-200 dark:text-orange-900">Beta</span>
         <button
           type="button"
           className="ml-auto -mx-1.5 -my-1.5 bg-blue-50 inline-flex justify-center items-center text-blue-900 rounded-lg focus:ring-2 focus:ring-blue-400 p-1 hover:bg-blue-200 h-6 w-6 dark:bg-blue-900 dark:text-blue-400 dark:hover:bg-blue-800"
           data-dismiss-target="#dropdown-cta"
-          onClick={handleClick}
+          onClick={handleMsgShow}
           aria-label="Close"
         >
           <span className="sr-only">Close</span>

@@ -48,13 +48,13 @@ export default function CTAButton({ handleNavMobile, navMobileActive }: any): JS
 
   const socialMediaIcon: string[] = ["uiw:facebook", "cib:instagram"];
 
-  const handleClick = () => {
-    isActive(!active);
+  const handleClick = (newState: boolean) => {
+    isActive(newState);
   };
 
   return (
     <div>
-      <nav className="flex items-center justify-between px-4 py-4 w-full">
+      <nav className="flex items-center justify-between px-4 pt-4 w-full">
         {!navMobileActive && <h2 className="text-xl dark:text-[#a3a3a3]">Renz Aura</h2>}
         <button
           data-drawer-target="cta-button-sidebar"
@@ -77,13 +77,13 @@ export default function CTAButton({ handleNavMobile, navMobileActive }: any): JS
 
       {/* Open Nav Menus ( Mobile ) */}
       {navMobileActive && (
-        <aside className="px-4 sm:hidden pb-8">
+        <aside className={`${active ? "hidden" : "block"} px-4 sm:hidden pb-8`}>
           <nav>
             <ProfileCard />
             <ul className="space-y-3 flex flex-col font-medium">
               {navMenus.map((navMenu, index) => {
                 return (
-                  <SidebarMenus key={index} icon={navMenu.icon} path={navMenu.path} isActive={true}>
+                  <SidebarMenus key={index} icon={navMenu.icon} path={navMenu.path} onClick={handleClick}>
                     {navMenu.children}
                   </SidebarMenus>
                 );
@@ -91,7 +91,7 @@ export default function CTAButton({ handleNavMobile, navMobileActive }: any): JS
             </ul>
           </nav>
           <SocialMedia icons={socialMediaIcon} />
-          <BetaMessage active={active} handleClick={handleClick} />
+          <BetaMessage />
         </aside>
       )}
 
@@ -101,14 +101,14 @@ export default function CTAButton({ handleNavMobile, navMobileActive }: any): JS
           <ul className="space-y-3 flex flex-col font-medium">
             {navMenus.map((navMenu, index) => {
               return (
-                <SidebarMenus key={index} icon={navMenu.icon} path={navMenu.path} isActive={true}>
+                <SidebarMenus key={index} icon={navMenu.icon} path={navMenu.path} onClick={handleClick}>
                   {navMenu.children}
                 </SidebarMenus>
               );
             })}
           </ul>
           <SocialMedia icons={socialMediaIcon} />
-          <BetaMessage active={active} handleClick={handleClick} />
+          <BetaMessage />
         </nav>
       </aside>
     </div>
