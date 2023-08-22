@@ -1,6 +1,6 @@
 import { Icon } from "@iconify/react";
-import { Link } from "react-router-dom";
-import { useState, useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
+import { useState } from "react";
 
 interface SidebarMenuProps {
   icon: any;
@@ -10,6 +10,9 @@ interface SidebarMenuProps {
 }
 
 export default function SidebarMenus({ icon, path, children, isActive }: SidebarMenuProps): JSX.Element {
+  const location = useLocation();
+  const isNavMatching = path === location.pathname;
+
   if (path === "") {
     const [darkMode, toggleDarkMode] = useState(false);
 
@@ -34,9 +37,13 @@ export default function SidebarMenus({ icon, path, children, isActive }: Sidebar
 
   return (
     <Link to={`${path}`}>
-      <div className={`${isActive ? "" : ""} flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group`}>
-        <Icon icon={icon} className="w-5 h-5 icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 21" />
-        <span className="ml-3">{children}</span>
+      <div
+        className={`${
+          isNavMatching ? "bg-gray-100 text-gray-900 hover:bg-gray-100 dark:hover:text-gray-50 dark:text-black dark:hover:bg-gray-700" : ""
+        } flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group`}
+      >
+        <Icon icon={icon} className={`${path === location.pathname ? "text-primaryBlack dark:group-hover:text-white" : "icon"} w-5 h-5 `} aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 21" />
+        <span className={`ml-3`}>{children}</span>
       </div>
     </Link>
   );
