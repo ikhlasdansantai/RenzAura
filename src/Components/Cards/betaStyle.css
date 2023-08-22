@@ -1,0 +1,20 @@
+.home-card figure:first-child:hover img {
+  filter: brightness(50%);
+  transition: 0.3s;
+}
+.home-card figure:first-child:hover #sosmedBeta {
+  transform: scale(1);
+  opacity: 1;
+  transition: 0.5s;
+}
+#sosmedBeta {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transform: scale(0);
+  opacity: 0;
+  transition: 0.5s;
+  z-index: 9;
+}

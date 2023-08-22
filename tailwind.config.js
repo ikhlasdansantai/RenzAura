@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   darkMode: "class",
-  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}", "node_modules/flowbite-react/**/*.{js,jsx,ts,tsx}"],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
       container: {
@@ -9,12 +9,14 @@ export default {
         margin: {
           default: "0",
         },
-        colors: {
-          primaryBlack: "#121212",
-          sedondBlack: "#262626",
-          primaryText: "#737373",
-          lineColor: "#999",
-        },
+      },
+      colors: {
+        primary: "#ffffff",
+        primaryBlack: "#121212",
+        sedondBlack: "#262626",
+        primaryText: "#737373",
+        secondText: "#A3A3A3",
+        lineColor: "#999999",
       },
     },
   },
