@@ -18,14 +18,21 @@ export default function Home() {
       imgPost: igPost1,
       imgProfile: userImgProfile,
       author: "Renz Aura",
-      date: "12 Hours Ago",
+      date: "2 Hours Ago",
       link: "https://www.instagram.com/renz_aura/",
     },
     {
       imgPost: igPost2,
       imgProfile: userImgProfile,
       author: "Renz Aura",
-      date: "12 Hours Ago",
+      date: "5 Hours Ago",
+      link: "https://www.instagram.com/renz_aura/",
+    },
+    {
+      imgPost: igPost1,
+      imgProfile: userImgProfile,
+      author: "Renz Aura",
+      date: "10 Hours Ago",
       link: "https://www.instagram.com/renz_aura/",
     },
   ];
