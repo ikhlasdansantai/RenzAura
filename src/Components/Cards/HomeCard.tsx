@@ -25,9 +25,9 @@ export default function HomeCard({ imgProfile, imgPost, author, date, link }: Ho
   };
 
   return (
-    <div onClick={() => handleLinkTo()} className="home-card w-[20rem] cursor-pointer">
+    <div onClick={() => handleLinkTo()} className="home-card snap-end flex-shrink-0 w-[22rem] md:w-[20rem] cursor-pointer pr-4">
       <figure className="relative">
-        <img src={imgPost} alt="instagramPostPict" height="100%" width="100%" className="block max-w-full " />
+        <img src={imgPost} alt="instagramPostPict" height="100%" width="100%" className="block max-w-full" />
         <SosmedBeta />
       </figure>
       <div className="titles flex items-center gap-2 mt-2">
