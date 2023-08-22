@@ -6,10 +6,10 @@ interface SidebarMenuProps {
   icon: any;
   path: string;
   children: string;
-  isActive: boolean;
+  onClick: (newState: boolean) => void;
 }
 
-export default function SidebarMenus({ icon, path, children, isActive }: SidebarMenuProps): JSX.Element {
+export default function SidebarMenus({ icon, path, children, onClick }: SidebarMenuProps): JSX.Element {
   const location = useLocation();
   const isNavMatching = path === location.pathname;
 
@@ -22,7 +22,7 @@ export default function SidebarMenus({ icon, path, children, isActive }: Sidebar
     };
 
     return (
-      <div className={`${isActive ? "" : ""} flex justify-between p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group`}>
+      <div className={`flex justify-between p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group`}>
         <div className="flex items-center">
           <Icon icon={icon} className="w-5 h-5 icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 21" />
           <span className="ml-3">{children}</span>
@@ -35,14 +35,18 @@ export default function SidebarMenus({ icon, path, children, isActive }: Sidebar
     );
   }
 
+  const handleStateChange = () => {
+    onClick(true);
+  };
+
   return (
-    <Link to={`${path}`}>
+    <Link to={`${path}`} onClick={() => handleStateChange()}>
       <div
         className={`${
-          isNavMatching ? "bg-gray-100 text-gray-900 hover:bg-gray-100 dark:hover:text-gray-50 dark:text-black dark:hover:bg-gray-700" : ""
+          isNavMatching ? "bg-gray-100 text-gray-900 hover:bg-gray-100 dark:hover:text-gray-50 dark:bg-gray-700 dark:text-black dark:hover:bg-gray-700" : ""
         } flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group`}
       >
-        <Icon icon={icon} className={`${path === location.pathname ? "text-primaryBlack dark:group-hover:text-white" : "icon"} w-5 h-5 `} aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 21" />
+        <Icon icon={icon} className={`${path === location.pathname ? "dark:text-white dark:group-hover:text-white" : "icon"} w-5 h-5 `} aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 21" />
         <span className={`ml-3`}>{children}</span>
       </div>
     </Link>
