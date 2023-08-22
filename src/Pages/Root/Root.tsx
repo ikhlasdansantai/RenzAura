@@ -12,7 +12,7 @@ export default function Root() {
   return (
     <>
       <CTAButton handleNavMobile={handleNavMobile} navMobileActive={navMobileActive} />
-      <main id="main" className={`p-4 sm:ml-64 ${navMobileActive ? "hidden" : ""}`}>
+      <main id="main" className={`${navMobileActive ? "hidden" : "block"} p-4 min-h-screen sm:ml-64 pt-[6rem] sm:pt-10 overflow-hidden`}>
         <Outlet />
       </main>
     </>
