@@ -1,10 +1,11 @@
 import { Icon } from "@iconify/react";
+import Title from "../../Components/Title/Title";
 
 export default function AboutUs() {
   return (
-    <div className="min-h-screen">
+    <div>
       <div className="titles underlineText">
-        <h1 className="text-4xl dark:text-white">Mari Berkenalan! 👋</h1>
+        <Title>Mari Berkenalan! 👋</Title>
         <p className="mt-4 text-slate-600 text-sm sm:text-[16px] dark:text-secondText leading-6">
           Berawal dari sebuah keresahan, memunculkan ide dan solusi baru untuk mengembangkan sesuatu sesuai kemampuan kami, dan kebetulan kemampuan kami adalah selain berjualan, Di samping menjalankan bisnis, kami juga memiliki keahlian
           dalam membangun platform website yang memikat, untuk sebagai media promosi kami,Kami ingin menghadirkan pengalaman yang menarik bagi calon pelanggan dan membantu meningkatkan daya tarik bisnis Anda.

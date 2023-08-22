@@ -1,7 +1,6 @@
 import { Icon } from "@iconify/react/dist/iconify.js";
 import { Link } from "react-router-dom";
-import { useEffect } from "react";
-
+import Title from "../../Components/Title/Title";
 interface HomeContentDatasProps {
   imgPost: string;
   imgProfile: string;
@@ -14,7 +13,7 @@ export default function Fashion({ items }: any): JSX.Element {
   return (
     <div id="home" className="min-h-screen ">
       <div className="titles underlineText">
-        <h1 className="text-4xl dark:text-white">Hi, Selamat Datang! 🎉</h1>
+        <Title>Pilihan Baju, Hanya Untuk Kamu</Title>
         <p className="dark:text-secondText mt-2">Memperkenalkan sebuah platform untuk kamu yang mau belanja dengan mudah dengan harga yang murah meriah, selamat berbelanja :D.</p>
       </div>
       <div id="contents" className="mt-10">
@@ -25,10 +24,10 @@ export default function Fashion({ items }: any): JSX.Element {
           </div>
           <span className="dark:text-secondText">Lihat Selengkapnya</span>
         </div>
-        <div className="mt-6 flex gap-10">
+        <div className="mt-6 flex flex-col md:flex-row gap-10">
           {items.map((item: any) => (
             <Link to={`/pakaian/${item.id}`} key={item.id}>
-              <figure className="w-[20rem]">
+              <figure className="md:w-[20rem]">
                 <img src={item.imgPost} alt="" />
               </figure>
             </Link>
