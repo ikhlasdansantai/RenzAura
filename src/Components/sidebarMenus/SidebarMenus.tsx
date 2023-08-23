@@ -22,7 +22,7 @@ export default function SidebarMenus({ icon, path, children, onClick }: SidebarM
     };
 
     return (
-      <div className={`flex justify-between p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group`}>
+      <div className={`flex justify-between p-2 text-gray-900 rounded-lg dark:text-gray-500 cursor-pointer group`}>
         <div className="flex items-center">
           <Icon icon={icon} className="w-5 h-5 icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 21" />
           <span className="ml-3">{children}</span>
@@ -43,8 +43,8 @@ export default function SidebarMenus({ icon, path, children, onClick }: SidebarM
     <Link to={`${path}`} onClick={() => handleStateChange()}>
       <div
         className={`${
-          isNavMatching ? "bg-gray-100 text-gray-900 hover:bg-gray-100 dark:hover:text-gray-50 dark:bg-gray-700 dark:text-black dark:hover:bg-gray-700" : ""
-        } flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group`}
+          isNavMatching ? "bg-gray-100 text-gray-900 hover:bg-gray-100 dark:hover:text-gray-50 dark:bg-gray-700 dark:text-white dark:hover:bg-gray-700" : ""
+        } flex items-center p-2 text-gray-900 rounded-lg dark:text-gray-500 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white group`}
       >
         <Icon icon={icon} className={`${path === location.pathname ? "dark:text-white dark:group-hover:text-white" : "icon"} w-5 h-5 `} aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 21" />
         <span className={`ml-3`}>{children}</span>
