@@ -28,7 +28,7 @@ export default function Fashion({ items }: any): JSX.Element {
           {items.map((item: any) => (
             <Link to={`/pakaian/${item.id}`} key={item.id}>
               <figure className="md:w-[20rem]">
-                <img src={item.imgPost} alt="" />
+                <img src={item.imgPost} alt="FasionProduct" />
               </figure>
             </Link>
           ))}
