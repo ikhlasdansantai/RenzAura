@@ -23,19 +23,19 @@ export default function AboutUs() {
         <div className="statistics-containers mt-4 grid grid-cols-2  gap-6 lg:grid-cols-3">
           <div className="statistics-card rounded-lg dark:bg-[#262626] p-4 border shadow-md dark:border-primaryBlack">
             <h2 className="dark:text-white">Pengunjung</h2>
-            <span className="text-slate-600">210K+</span>
+            <span className="text-slate-600 dark:text-slate-300">210K+</span>
           </div>
           <div className="statistics-card rounded-lg dark:bg-[#262626] p-4 border shadow-md dark:border-primaryBlack">
             <h2 className="dark:text-white">Produk Terjual</h2>
-            <span className="text-slate-600">999</span>
+            <span className="text-slate-600 dark:text-slate-300">999</span>
           </div>
           <div className="statistics-card col-span-2 lg:col-span-1 rounded-lg dark:bg-[#262626] p-4 border shadow-md lg:max-w-[20rem] dark:border-primaryBlack">
             <h2 className="dark:text-white">Pengunjung Aktif</h2>
-            <span className="text-slate-600">989</span>
+            <span className="text-slate-600 dark:text-slate-300">989</span>
           </div>
         </div>
         <div id="join-with-us" className="mt-6">
-          <div className="statistics-card col-span-2 rounded-lg dark:bg-[#262626] p-4 flex gap-3 border shadow-md dark:border-primaryBlack max-w-[21rem]">
+          <div className="statistics-card col-span-2 rounded-lg dark:bg-[#262626] p-4 flex gap-3 border shadow-md dark:border-primaryBlack sm:max-w-[21rem]">
             <Icon icon="mingcute:rocket-line" className="icon text-[30px]" />
             <div className="titles">
               <h2 className="dark:text-white">Ingin Bergabung Bersama Kami?</h2>
