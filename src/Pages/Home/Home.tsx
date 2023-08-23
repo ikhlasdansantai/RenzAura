@@ -51,9 +51,9 @@ export default function Home() {
             <Icon icon="cib:instagram" className="icon" />
             <span className="dark:text-secondText">Instagram</span>
           </div>
-          <span className="dark:text-secondText">Lihat Selengkapnya</span>
+          {/* <span className="dark:text-secondText">Lihat Selengkapnya</span> */}
         </div>
-        <div className="container-cards flex flex-row w-94 mt-6 gap-0 snap-x snap-proximity overflow-x-scroll overflow-y-hidden pb-3 xl:snap-none xl:overflow-hidden">
+        <div className="container-cards flex flex-row w-94 mt-6 gap-4 snap-x snap-proximity overflow-x-scroll overflow-y-hidden pb-3 xl:snap-none xl:overflow-hidden">
           {homeContentDatas.map((data, index) => {
             return <HomeCard key={index} imgProfile={data.imgProfile} imgPost={data.imgPost} author={data.author} date={data.date} link={data.link} />;
           })}
