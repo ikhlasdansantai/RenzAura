@@ -12,6 +12,7 @@ import ProductDetails from "./Pages/ProductDetails/ProductDetails";
 import igPost1 from "./assets/instagram_post/1.webp";
 import igPost2 from "./assets/instagram_post/2.webp";
 import userImgProfile from "./assets/profile_users/368172058_200014439727799_4548607432220709411_n.jpg";
+import Foods from "./Pages/Foods/Foods";
 
 interface HomeContentDatas {
   imgPost: string;
@@ -64,7 +65,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/makanan",
-        element: <h2>Hello Makanan</h2>,
+        element: <Foods />,
       },
       {
         path: "/jasaMakeup",
