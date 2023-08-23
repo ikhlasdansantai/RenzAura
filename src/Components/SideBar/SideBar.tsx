@@ -52,10 +52,9 @@ export default function CTAButton({ handleNavMobile, navMobileActive }: any): JS
     isActive(newState);
   };
 
-
   return (
     <>
-      <div className={`fixed ${navMobileActive ? "fixed top-0 bottom-0 left-0 right-0 bg-white" : "none"} overflow-auto shadow-md w-full dark:bg-primaryBlack z-50 sm:hidden`}>
+      <div className={`fixed ${navMobileActive ? "fixed top-0 bottom-0 left-0 right-0 " : "none"} overflow-auto shadow-md w-full bg-white dark:bg-primaryBlack z-50 sm:hidden`}>
         <nav className="flex items-center justify-between px-4 py-4 w-full">
           {!navMobileActive && <h2 className="text-xl dark:text-[#a3a3a3]">Renz Aura</h2>}
           <button
