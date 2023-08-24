@@ -10,15 +10,21 @@ import Fashion from "./Pages/Fashion/Fashion";
 import ProductDetails from "./Pages/ProductDetails/ProductDetails";
 
 import igPost1 from "./assets/instagram_post/1.webp";
-import igPost2 from "./assets/instagram_post/2.webp";
+import fashion2 from "./assets/instagram_post/2.webp";
+import fashion3 from "./assets/Fashion/1.jpeg";
+import fashion4 from "./assets/Fashion/2.jpeg";
+import fashion5 from "./assets/Fashion/3.jpeg";
+import fashion6 from "./assets/Fashion/4.jpeg";
 import userImgProfile from "./assets/profile_users/368172058_200014439727799_4548607432220709411_n.jpg";
 import Foods from "./Pages/Foods/Foods";
 
 interface HomeContentDatas {
   imgPost: string;
   imgProfile: string;
+  title: string;
+  desc: string;
   author: string;
-  date: string;
+  price: number;
   link: string;
   id: number;
 }
@@ -26,18 +32,62 @@ const homeContentDatas: HomeContentDatas[] = [
   {
     imgPost: igPost1,
     imgProfile: userImgProfile,
+    title: "Blazer",
+    desc: "Sebuah pakian yang bisa bikin kamu nyaman ketika menggunakannya, mendapatkan sebuah keharmonisan disetiap gesekannya, jadi tunggu apa lagi ayo buruan di borong.",
     author: "Renz Aura",
-    date: "12 Hours Ago",
+    price: 50_000,
     link: "https://www.instagram.com/renz_aura/",
     id: 1,
   },
   {
-    imgPost: igPost2,
+    imgPost: fashion2,
     imgProfile: userImgProfile,
+    title: "Blazer",
+    desc: "Sebuah pakian yang bisa bikin kamu nyaman ketika menggunakannya, mendapatkan sebuah keharmonisan disetiap gesekannya, jadi tunggu apa lagi ayo buruan di borong.",
     author: "Renz Aura",
-    date: "1 Hours Ago",
+    price: 50_000,
     link: "https://www.instagram.com/renz_aura/",
     id: 2,
+  },
+  {
+    imgPost: fashion3,
+    imgProfile: userImgProfile,
+    title: "Blazer",
+    desc: "Sebuah pakian yang bisa bikin kamu nyaman ketika menggunakannya, mendapatkan sebuah keharmonisan disetiap gesekannya, jadi tunggu apa lagi ayo buruan di borong.",
+    author: "Renz Aura",
+    price: 50_000,
+    link: "https://www.instagram.com/renz_aura/",
+    id: 3,
+  },
+  {
+    imgPost: fashion4,
+    imgProfile: userImgProfile,
+    title: "Blazer",
+    desc: "Sebuah pakian yang bisa bikin kamu nyaman ketika menggunakannya, mendapatkan sebuah keharmonisan disetiap gesekannya, jadi tunggu apa lagi ayo buruan di borong.",
+    author: "Renz Aura",
+    price: 50_000,
+    link: "https://www.instagram.com/renz_aura/",
+    id: 4,
+  },
+  {
+    imgPost: fashion5,
+    imgProfile: userImgProfile,
+    title: "Blazer",
+    desc: "Sebuah pakian yang bisa bikin kamu nyaman ketika menggunakannya, mendapatkan sebuah keharmonisan disetiap gesekannya, jadi tunggu apa lagi ayo buruan di borong.",
+    author: "Renz Aura",
+    price: 50_000,
+    link: "https://www.instagram.com/renz_aura/",
+    id: 5,
+  },
+  {
+    imgPost: fashion6,
+    imgProfile: userImgProfile,
+    title: "Blazer",
+    desc: "Sebuah pakian yang bisa bikin kamu nyaman ketika menggunakannya, mendapatkan sebuah keharmonisan disetiap gesekannya, jadi tunggu apa lagi ayo buruan di borong.",
+    author: "Renz Aura",
+    price: 50_000,
+    link: "https://www.instagram.com/renz_aura/",
+    id: 6,
   },
 ];
 
