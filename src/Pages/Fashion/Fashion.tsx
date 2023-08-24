@@ -1,14 +1,14 @@
 import { Icon } from "@iconify/react/dist/iconify.js";
 import { Link } from "react-router-dom";
 import Title from "../../Components/Title/Title";
-interface HomeContentDatasProps {
-  imgPost: string;
-  imgProfile: string;
-  author: string;
-  date: string;
-  link: string;
-  id: number;
-}
+// interface HomeContentDatasProps {
+//   imgPost: string;
+//   imgProfile: string;
+//   author: string;
+//   date: string;
+//   link: string;
+//   id: number;
+// }
 export default function Fashion({ items }: any): JSX.Element {
   return (
     <div id="home" className="min-h-screen ">
@@ -24,12 +24,14 @@ export default function Fashion({ items }: any): JSX.Element {
           </div>
           <span className="dark:text-secondText">Lihat Selengkapnya</span>
         </div>
-        <div className="mt-6 flex flex-col md:flex-row gap-10">
+        <div className="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 md:flex-row gap-10">
           {items.map((item: any) => (
             <Link to={`/pakaian/${item.id}`} key={item.id}>
-              <figure className="md:w-[20rem]">
-                <img src={item.imgPost} alt="FasionProduct" />
-              </figure>
+              <div className="p-3 rounded-md bg-white border shadow-lg">
+                <figure>
+                  <img src={item.imgPost} alt="FasionProduct" />
+                </figure>
+              </div>
             </Link>
           ))}
         </div>
