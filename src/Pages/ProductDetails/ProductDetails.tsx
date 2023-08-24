@@ -14,13 +14,20 @@ export default function ProductDetails({ product }: any) {
 
   return (
     <div>
-      <p>Product Details {id}</p>
-      <h1>{getProduct.author}</h1>
-      <figure className="w-60">
-        <img src={getProduct.imgPost} alt="" />
-      </figure>
-      <p>{getProduct.date}</p>
-      <Link to="/pakaian">Kembali ke Daftar</Link>
+      <Link to="/pakaian">Kembali ke Daftar Pakian</Link>
+      <div className="flex justify-evenly items-center mt-20">
+        <figure className="w-[20rem]">
+          <img src={getProduct.imgPost} alt="productIMG" height="100%" width="100%" />
+        </figure>
+        <div className="md:w-1/2">
+          <p>{getProduct.title}</p>
+          <p>{getProduct.desc}</p>
+          <p className="mt-4">
+            Subtotal: <span className="font-semibold text-[#EAB308]">Rp.{getProduct.price.toLocaleString("id-ID")}</span>
+          </p>
+          <h1>{getProduct.author}</h1>
+        </div>
+      </div>
     </div>
   );
 }
