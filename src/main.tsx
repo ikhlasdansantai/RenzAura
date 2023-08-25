@@ -17,6 +17,7 @@ import fashion5 from "./assets/Fashion/3.jpeg";
 import fashion6 from "./assets/Fashion/4.jpeg";
 import userImgProfile from "./assets/profile_users/368172058_200014439727799_4548607432220709411_n.jpg";
 import Foods from "./Pages/Foods/Foods";
+import MakeUp from "./Pages/MakeUp/MakeUp";
 
 interface HomeContentDatas {
   imgPost: string;
@@ -119,7 +120,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/jasaMakeup",
-        element: <h2>Hello JasaMakeup</h2>,
+        element: <MakeUp />,
       },
     ],
   },
