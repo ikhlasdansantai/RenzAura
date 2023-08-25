@@ -13,8 +13,10 @@ export default function Fashion({ items }: any): JSX.Element {
   return (
     <div id="home" className="min-h-screen ">
       <div className="titles underlineText">
-        <Title>Pilihan Baju, Hanya Untuk Kamu</Title>
-        <p className="dark:text-secondText mt-2">Memperkenalkan sebuah platform untuk kamu yang mau belanja dengan mudah dengan harga yang murah meriah, selamat berbelanja :D.</p>
+        <Title>Koleksi Eksklusif Baju, Spesial Untuk Anda</Title>
+        <p className="dark:text-secondText mt-2">
+          Kami hadir dengan koleksi baju terbaik untuk Anda. Pilih dari berbagai gaya dan desain sesuai selera Anda, semuanya dengan harga yang menarik. Jadikan berbelanja pengalaman yang menyenangkan bersama kami! 👕👖
+        </p>
       </div>
       <div id="contents" className="mt-10">
         <div className="container flex justify-between items-center">
