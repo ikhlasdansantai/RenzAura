@@ -30,16 +30,16 @@ interface HomeContentDatas {
   id: number;
 }
 const homeContentDatas: HomeContentDatas[] = [
-  {
-    imgPost: igPost1,
-    imgProfile: userImgProfile,
-    title: "Blazer",
-    desc: "Sebuah pakian yang bisa bikin kamu nyaman ketika menggunakannya, mendapatkan sebuah keharmonisan disetiap gesekannya, jadi tunggu apa lagi ayo buruan di borong.",
-    author: "Renz Aura",
-    price: 50_000,
-    link: "https://www.instagram.com/renz_aura/",
-    id: 1,
-  },
+  // {
+  //   imgPost: igPost1,
+  //   imgProfile: userImgProfile,
+  //   title: "Blazer",
+  //   desc: "Sebuah pakian yang bisa bikin kamu nyaman ketika menggunakannya, mendapatkan sebuah keharmonisan disetiap gesekannya, jadi tunggu apa lagi ayo buruan di borong.",
+  //   author: "Renz Aura",
+  //   price: 50_000,
+  //   link: "https://www.instagram.com/renz_aura/",
+  //   id: 1,
+  // },
   {
     imgPost: fashion2,
     imgProfile: userImgProfile,
