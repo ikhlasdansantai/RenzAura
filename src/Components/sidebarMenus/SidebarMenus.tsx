@@ -1,6 +1,6 @@
 import { Icon } from "@iconify/react";
 import { Link, useLocation } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 interface SidebarMenuProps {
   icon: any;
@@ -12,13 +12,26 @@ interface SidebarMenuProps {
 export default function SidebarMenus({ icon, path, children, onClick }: SidebarMenuProps): JSX.Element {
   const location = useLocation();
   const isNavMatching = path === location.pathname;
+  const [darkMode, toggleDarkMode] = useState(false);
+
+  useEffect(() => {
+    const savedDarkMode = localStorage.getItem("darkMode");
+
+    if (savedDarkMode === "enabled") {
+      toggleDarkMode(true);
+      document.querySelector("html")?.classList.add("dark");
+    } else {
+      toggleDarkMode(false);
+      document.querySelector("html")?.classList.remove("dark");
+    }
+  });
 
   if (path === "") {
-    const [darkMode, toggleDarkMode] = useState(false);
-
     const handleDarkMode = () => {
-      toggleDarkMode(!darkMode);
+      const newDarkMode = !darkMode;
+      toggleDarkMode(newDarkMode);
       document.querySelector("html")?.classList.toggle("dark");
+      localStorage.setItem("darkMode", newDarkMode ? "enabled" : "disabled");
     };
 
     return (
