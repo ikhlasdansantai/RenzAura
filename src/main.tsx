@@ -9,7 +9,6 @@ import AboutUs from "./Pages/AboutUs/AboutUs";
 import Fashion from "./Pages/Fashion/Fashion";
 import ProductDetails from "./Pages/ProductDetails/ProductDetails";
 
-import igPost1 from "./assets/instagram_post/1.webp";
 import fashion2 from "./assets/instagram_post/2.webp";
 import fashion3 from "./assets/Fashion/1.jpeg";
 import fashion4 from "./assets/Fashion/2.jpeg";
@@ -28,17 +27,19 @@ interface HomeContentDatas {
   author: string;
   price: number;
   link: string;
+  size: string;
   id: number;
 }
 const homeContentDatas: HomeContentDatas[] = [
   {
     imgPost: fashion2,
     imgProfile: userImgProfile,
-    title: "Blazer",
-    desc: "Sebuah pakian yang bisa bikin kamu nyaman ketika menggunakannya, mendapatkan sebuah keharmonisan disetiap gesekannya, jadi tunggu apa lagi ayo buruan di borong.",
+    title: "Pattern Blazer",
+    desc: "Miliki Blazer Berkualitas ini dengan Investasi Hanya 50K! Cocok untuk Acara Formal dan Kasual. Jangan Lewatkan Kesempatan Ini, Stok Terbatas. Dapatkan Gaya yang Tampil Beda dengan Blazer dari Koleksi Pakaian Kami",
     author: "Renz Aura",
     price: 50_000,
     link: "https://www.instagram.com/renz_aura/",
+    size: "L",
     id: 2,
   },
   {
@@ -49,6 +50,7 @@ const homeContentDatas: HomeContentDatas[] = [
     author: "Renz Aura",
     price: 50_000,
     link: "https://www.instagram.com/renz_aura/",
+    size: "L",
     id: 3,
   },
   {
@@ -59,6 +61,7 @@ const homeContentDatas: HomeContentDatas[] = [
     author: "Renz Aura",
     price: 50_000,
     link: "https://www.instagram.com/renz_aura/",
+    size: "L",
     id: 4,
   },
   {
@@ -67,8 +70,9 @@ const homeContentDatas: HomeContentDatas[] = [
     title: "Blazer",
     desc: "Sebuah pakian yang bisa bikin kamu nyaman ketika menggunakannya, mendapatkan sebuah keharmonisan disetiap gesekannya, jadi tunggu apa lagi ayo buruan di borong.",
     author: "Renz Aura",
-    price: 50_000,
+    price: 65_000,
     link: "https://www.instagram.com/renz_aura/",
+    size: "L",
     id: 5,
   },
   {
@@ -77,8 +81,9 @@ const homeContentDatas: HomeContentDatas[] = [
     title: "Blazer",
     desc: "Sebuah pakian yang bisa bikin kamu nyaman ketika menggunakannya, mendapatkan sebuah keharmonisan disetiap gesekannya, jadi tunggu apa lagi ayo buruan di borong.",
     author: "Renz Aura",
-    price: 50_000,
+    price: 45_000,
     link: "https://www.instagram.com/renz_aura/",
+    size: "L",
     id: 6,
   },
 ];
