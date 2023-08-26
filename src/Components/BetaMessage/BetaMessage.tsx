@@ -1,9 +1,18 @@
+import { Link } from "react-router-dom";
 import { useState } from "react";
 
-export default function BetaMessage() {
+interface BetaMessageProp {
+  onClick: (newState: boolean) => void;
+}
+
+export default function BetaMessage({ onClick }: BetaMessageProp): JSX.Element {
   const [msgShow, setMsgShow] = useState(false);
   const handleMsgShow = () => {
     setMsgShow(!msgShow);
+  };
+
+  const handleStateChange = () => {
+    onClick(true);
   };
 
   return (
@@ -26,9 +35,9 @@ export default function BetaMessage() {
       <p className="mb-3 text-sm text-blue-800 dark:text-blue-400">
         Wesbite ini masih dalam tahap pengembangan, jika ada kritik atau saran, kalian bisa kirim ke link di bawah ini, feedback kalian dibutuhkan untuk improvisasi website kami.
       </p>
-      <a className="text-sm text-blue-800 underline font-medium hover:text-blue-900 dark:text-blue-400 dark:hover:text-blue-300" href="#">
+      <Link to={"/kritikdansaran"} onClick={() => handleStateChange()} className="text-sm text-blue-800 underline font-medium hover:text-blue-900 dark:text-blue-400 dark:hover:text-blue-300">
         Kirim Kritik Dan Saran
-      </a>
+      </Link>
     </div>
   );
 }
