@@ -46,7 +46,20 @@ export default function CTAButton({ handleNavMobile, navMobileActive }: any): JS
     },
   ];
 
-  const socialMediaIcon: string[] = ["uiw:facebook", "cib:instagram"];
+  interface SocialMediaIcon {
+    icon: string;
+    path: string;
+  }
+  const socialMediaIcon: SocialMediaIcon[] = [
+    {
+      icon: "uiw:facebook",
+      path: "https://www.instagram.com/renz_aura/",
+    },
+    {
+      icon: "cib:instagram",
+      path: "https://www.instagram.com/renz_aura/",
+    },
+  ];
 
   const handleClick = (newState: boolean) => {
     isActive(newState);
@@ -91,8 +104,8 @@ export default function CTAButton({ handleNavMobile, navMobileActive }: any): JS
                 })}
               </ul>
             </nav>
-            <SocialMedia icons={socialMediaIcon} />
-            <BetaMessage />
+            <SocialMedia socialMediaIcons={socialMediaIcon} />
+            <BetaMessage onClick={handleNavMobile} />
           </aside>
         )}
       </div>
@@ -109,8 +122,8 @@ export default function CTAButton({ handleNavMobile, navMobileActive }: any): JS
               );
             })}
           </ul>
-          <SocialMedia icons={socialMediaIcon} />
-          <BetaMessage />
+          <SocialMedia socialMediaIcons={socialMediaIcon} />
+          <BetaMessage onClick={handleNavMobile} />
         </nav>
       </aside>
     </>
