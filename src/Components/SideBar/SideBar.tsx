@@ -127,7 +127,7 @@ export default function CTAButton({ handleNavMobile, navMobileActive }: any): JS
             })}
           </ul>
           <SocialMedia socialMediaIcons={socialMediaIcon} />
-          <BetaMessage onClick={handleNavMobile} />
+          <BetaMessage onClick={() => {}} />
         </nav>
       </aside>
     </>
