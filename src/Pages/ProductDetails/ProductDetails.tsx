@@ -14,7 +14,9 @@ export default function ProductDetails({ product }: any) {
 
   return (
     <div>
-      <Link to="/pakaian">Kembali ke Daftar Pakian</Link>
+      <Link to="/pakaian" className="dark:text-white">
+        Kembali ke Daftar Pakaian
+      </Link>
       <div className="flex justify-evenly items-center mt-20">
         <figure className="w-[20rem]">
           <img src={getProduct.imgPost} alt="productIMG" height="100%" width="100%" />

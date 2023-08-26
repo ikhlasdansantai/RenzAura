@@ -11,7 +11,7 @@ import Title from "../../Components/Title/Title";
 // }
 export default function Fashion({ items }: any): JSX.Element {
   return (
-    <div id="home" className="min-h-screen ">
+    <div id="home" className="min-h-screen">
       <div className="titles underlineText">
         <Title>Koleksi Eksklusif Baju, Spesial Untuk Anda</Title>
         <p className="dark:text-secondText mt-2">
