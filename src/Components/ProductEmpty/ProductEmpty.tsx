@@ -8,7 +8,7 @@ export default function ProductEmpty() {
         <figcaption className="text-xs sm:text-left text-gray-600">Animation By: Lottiefiles</figcaption>
       </figure>
       <h2 className="dark:text-white mt-6 text-3xl">Upps, Produk Kosong :(</h2>
-      <p className="mt-1 text-slate-500 dark:text-slate-400">ProductEmpty</p>
+      <p className="mt-1 text-slate-500 dark:text-slate-400">Sedang kami restock sabar ya :D</p>
     </section>
   );
 }
