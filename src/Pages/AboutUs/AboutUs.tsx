@@ -7,13 +7,22 @@ export default function AboutUs() {
       <div className="titles underlineText">
         <Title>Mari Berkenalan! 👋</Title>
         <p className="mt-4 text-slate-600 text-sm sm:text-[16px] dark:text-secondText leading-6">
+          Bermula dari keresahan, timbul ide dan solusi baru untuk mengembangkan sesuatu sesuai dengan keahlian kami. Keahlian kami tidak hanya terbatas pada berjualan, namun juga dalam membangun platform website yang menarik. Platform ini
+          kami gunakan sebagai alat promosi.
+        </p>
+        <p className="mt-4 text-slate-600 text-sm sm:text-[16px] dark:text-secondText leading-6">
+          Kami ingin memberikan pengalaman yang menarik bagi calon pelanggan dan membantu meningkatkan daya tarik bisnis Anda. Kami juga memberikan peluang kepada Anda untuk menampilkan produk-produk unggulan di platform kami. Dengan ini,
+          Anda dapat memperluas jangkauan promosi dan menarik minat baru dari pengguna kami. Jika Anda tertarik bekerjasama, jangan ragu untuk menghubungi kami melalui nomor WhatsApp yang sudah kami sediakan di halaman website kami. Kami
+          dengan penuh semangat menantikan peluang kerjasama yang penuh potensi ini. Terimakasih! 😊
+        </p>
+        {/* <p className="mt-4 text-slate-600 text-sm sm:text-[16px] dark:text-secondText leading-6">
           Berawal dari sebuah keresahan, memunculkan ide dan solusi baru untuk mengembangkan sesuatu sesuai kemampuan kami, dan kebetulan kemampuan kami adalah selain berjualan, Di samping menjalankan bisnis, kami juga memiliki keahlian
           dalam membangun platform website yang memikat, untuk sebagai media promosi kami,Kami ingin menghadirkan pengalaman yang menarik bagi calon pelanggan dan membantu meningkatkan daya tarik bisnis Anda.
         </p>
         <p className="mt-2 text-slate-600 text-sm sm:text-[16px] dark:text-secondText leading-6">
           Kami juga memberikan peluang kepada Anda untuk menampilkan produk-produk unggulan di platform kami. Dengan ini, Anda dapat memperluas jangkauan promosi dan menarik minat baru dari pengguna kami. Jika Anda tertarik untuk
           bekerjasama, jangan ragu untuk menghubungi kami melalui nomor WhatsApp yang sudah kami sertakan di halaman website kami. Kami dengan antusias menanti peluang kerjasama yang penuh potensi ini. Terima kasih! 😊
-        </p>
+        </p> */}
       </div>
       <div id="statistics-wrappers" className="mt-10">
         <div className="flex gap-1 items-center ">
