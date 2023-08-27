@@ -6,14 +6,16 @@ export default function NotFoundPage() {
   const errorMessage = pageError ? pageError.statusText || pageError.message : "Unknown Error";
   return (
     <section id="error" className="px-4 min-h-screen flex justify-center items-center flex-col text-center">
-      <h1 className="mb-4 text-3xl">Oopppps :(</h1>
+      <h1 className="mb-4 text-3xl text-white dark:text-gray-900">Oopppps :(</h1>
       <figure>
         <iframe src="https://giphy.com/embed/mqRZe1ud8U3wJoSE3x" width="500" height="330" className="giphy-embed block max-w-full" allowFullScreen>
-          <a href="https://giphy.com/gifs/kpop-k-pop-ive-mqRZe1ud8U3wJoSE3x">via GIPHY</a>
+          <a href="https://giphy.com/gifs/kpop-k-pop-ive-mqRZe1ud8U3wJoSE3x" className="text-gray-500 dark:text-gray-900">
+            via GIPHY
+          </a>
         </iframe>
       </figure>
-      <div className="error-footer mt-4">
-        <p className="text-center">Terjadi kesalahan, karena kamu mengakses halaman yang tidak ditemukan</p>
+      <div className="error-footer mt-4 text-gray-500 dark:text-gray-900">
+        <p className="text-center ">Terjadi kesalahan, karena kamu mengakses halaman yang tidak ditemukan</p>
         <span className="text-xs block mt-1">pesan ERROR: {errorMessage}</span>
         <Link
           to={"/"}
