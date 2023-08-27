@@ -2,7 +2,7 @@
   "name": "renzaurawebapp",
   "private": true,
   "version": "1.0.0",
-  "homepage": "https://ikhlasdansantai.github.io/",
+  "homepage": "https://ikhlasdansantai.github.io/RenzAura/",
   "type": "module",
   "scripts": {
     "dev": "vite",
