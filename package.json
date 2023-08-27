@@ -3,7 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "homepage": "https://ikhlasdansantai.github.io/RenzAura",
+  "homepage": "https://ikhlasdansantai.github.io/RenzAura/",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
