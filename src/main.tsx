@@ -129,6 +129,10 @@ const router = createBrowserRouter([
     ],
   },
   {
+    path: "/RenzAura/tentangKami",
+    element: <AboutUs />,
+  },
+  {
     path: "*",
     element: <NotFoundPage />,
   },
