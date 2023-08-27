@@ -20,7 +20,7 @@ export default function Fashion({ items }: any): JSX.Element {
       <div id="contents" className="mt-10">
         <div className="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 min-[1400px]:grid-cols-4  md:flex-row gap-10">
           {items.map((item: any) => (
-            <Link to={`/pakaian/${item.id}`} key={item.id}>
+            <Link to={`/RenzAura/pakaian/${item.id}`} key={item.id}>
               <div className="p-3 rounded-md bg-white border shadow-lg">
                 <figure>
                   <img src={item.imgPost} alt="FasionProduct" />
