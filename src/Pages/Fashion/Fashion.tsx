@@ -1,4 +1,3 @@
-import { Icon } from "@iconify/react/dist/iconify.js";
 import { Link } from "react-router-dom";
 import Title from "../../Components/Title/Title";
 // interface HomeContentDatasProps {
