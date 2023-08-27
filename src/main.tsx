@@ -89,41 +89,6 @@ const homeContentDatas: HomeContentDatas[] = [
 ];
 
 const router = createBrowserRouter([
-  // {
-  //   path: "/",
-  //   element: <Root />,
-  //   errorElement: <NotFoundPage />,
-  //   children: [
-  //     {
-  //       path: "/",
-  //       element: <Home />,
-  //     },
-  //     {
-  //       path: "/tentangKami",
-  //       element: <AboutUs />,
-  //     },
-  //     {
-  //       path: "/pakaian",
-  //       element: <Fashion items={homeContentDatas} />,
-  //     },
-  //     {
-  //       path: "/pakaian/:id",
-  //       element: <ProductDetails product={homeContentDatas} />,
-  //     },
-  //     {
-  //       path: "/makanan",
-  //       element: <Foods />,
-  //     },
-  //     {
-  //       path: "/jasaMakeup",
-  //       element: <MakeUp />,
-  //     },
-  //     {
-  //       path: "/kritikdansaran",
-  //       element: <Form />,
-  //     },
-  //   ],
-  // },
   {
     path: "/",
     element: <Root />,
