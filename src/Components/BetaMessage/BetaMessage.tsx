@@ -35,7 +35,7 @@ export default function BetaMessage({ onClick }: BetaMessageProp): JSX.Element {
       <p className="mb-3 text-sm text-blue-800 dark:text-blue-400">
         Wesbite ini masih dalam tahap pengembangan, jika ada kritik atau saran, kalian bisa kirim ke link di bawah ini, feedback kalian dibutuhkan untuk improvisasi website kami.
       </p>
-      <Link to={"kritikdansaran"} onClick={() => handleStateChange()} className="text-sm text-blue-800 underline font-medium hover:text-blue-900 dark:text-blue-400 dark:hover:text-blue-300">
+      <Link to={"/RenzAura/kritikdansaran"} onClick={() => handleStateChange()} className="text-sm text-blue-800 underline font-medium hover:text-blue-900 dark:text-blue-400 dark:hover:text-blue-300">
         Kirim Kritik Dan Saran
       </Link>
     </div>
