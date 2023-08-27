@@ -30,7 +30,7 @@ export default function ProductDetails({ product }: any) {
 
   return (
     <div className="pb-4 sm:p-0">
-      <Link to="/pakaian" className="dark:text-white flex gap-2 items-center">
+      <Link to="/RenzAura/pakaian" className="dark:text-white flex gap-2 items-center">
         <Icon icon="uil:angle-left-b" className="text-xl" />
         <span>Kembali ke Daftar Pakaian</span>
       </Link>

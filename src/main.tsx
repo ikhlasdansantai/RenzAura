@@ -98,12 +98,8 @@ const router = createBrowserRouter([
         path: "",
         element: <Home />,
       },
-      // {
-      //   path: "/RenzAura/",
-      //   element: <Home />,
-      // },
       {
-        path: "/RenzAura/tentangKami",
+        path: "tentangKami",
         element: <AboutUs />,
       },
       {
