@@ -48,12 +48,13 @@ export default function AboutUs() {
             <Icon icon="mingcute:rocket-line" className="icon text-[30px]" />
             <div className="titles">
               <h2 className="dark:text-white">Ingin Bergabung Bersama Kami?</h2>
-              <button
+              <a
+                href="https://api.whatsapp.com/send?phone=6281214553067&text=Hi, saya tertarik untuk memasarkan produk saya di website Anda. Bagaimana caranya? Terima kasih!"
                 type="button"
                 className="mt-3 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-[#525252] dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
               >
                 Gabung Sekarang
-              </button>
+              </a>
             </div>
           </div>
         </div>
