@@ -11,7 +11,7 @@ interface SidebarMenuProps {
 
 export default function SidebarMenus({ icon, path, children, onClick }: SidebarMenuProps): JSX.Element {
   const location = useLocation();
-  const isNavMatching = path === location.pathname;
+  const isNavMatching = `/RenzAura${path}` === location.pathname;
   const [darkMode, toggleDarkMode] = useState(false);
 
   useEffect(() => {
