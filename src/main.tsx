@@ -90,47 +90,43 @@ const homeContentDatas: HomeContentDatas[] = [
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/RenzAura/",
     element: <Root />,
     errorElement: <NotFoundPage />,
     children: [
       {
-        path: "/",
+        path: "",
         element: <Home />,
       },
-      {
-        path: "/RenzAura/",
-        element: <Home />,
-      },
+      // {
+      //   path: "/RenzAura/",
+      //   element: <Home />,
+      // },
       {
         path: "/RenzAura/tentangKami",
         element: <AboutUs />,
       },
       {
-        path: "/RenzAura/pakaian",
+        path: "pakaian",
         element: <Fashion items={homeContentDatas} />,
       },
       {
-        path: "/RenzAura/pakaian/:id",
+        path: "pakaian/:id",
         element: <ProductDetails product={homeContentDatas} />,
       },
       {
-        path: "/RenzAura/makanan",
+        path: "makanan",
         element: <Foods />,
       },
       {
-        path: "/RenzAura/jasaMakeup",
+        path: "jasaMakeup",
         element: <MakeUp />,
       },
       {
-        path: "/RenzAura/kritikdansaran",
+        path: "kritikdansaran",
         element: <Form />,
       },
     ],
-  },
-  {
-    path: "/RenzAura/tentangKami",
-    element: <AboutUs />,
   },
   {
     path: "*",
