@@ -89,6 +89,41 @@ const homeContentDatas: HomeContentDatas[] = [
 ];
 
 const router = createBrowserRouter([
+  // {
+  //   path: "/",
+  //   element: <Root />,
+  //   errorElement: <NotFoundPage />,
+  //   children: [
+  //     {
+  //       path: "/",
+  //       element: <Home />,
+  //     },
+  //     {
+  //       path: "/tentangKami",
+  //       element: <AboutUs />,
+  //     },
+  //     {
+  //       path: "/pakaian",
+  //       element: <Fashion items={homeContentDatas} />,
+  //     },
+  //     {
+  //       path: "/pakaian/:id",
+  //       element: <ProductDetails product={homeContentDatas} />,
+  //     },
+  //     {
+  //       path: "/makanan",
+  //       element: <Foods />,
+  //     },
+  //     {
+  //       path: "/jasaMakeup",
+  //       element: <MakeUp />,
+  //     },
+  //     {
+  //       path: "/kritikdansaran",
+  //       element: <Form />,
+  //     },
+  //   ],
+  // },
   {
     path: "/",
     element: <Root />,
@@ -99,32 +134,32 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: "/tentangKami",
+        path: "/RenzAura/",
+        element: <Home />,
+      },
+      {
+        path: "/RenzAura/tentangKami",
         element: <AboutUs />,
       },
       {
-        path: "/pakaian",
+        path: "/RenzAura/pakaian",
         element: <Fashion items={homeContentDatas} />,
       },
       {
-        path: "/pakaian/:id",
+        path: "/RenzAura/pakaian/:id",
         element: <ProductDetails product={homeContentDatas} />,
       },
       {
-        path: "/makanan",
+        path: "/RenzAura/makanan",
         element: <Foods />,
       },
       {
-        path: "/jasaMakeup",
+        path: "/RenzAura/jasaMakeup",
         element: <MakeUp />,
       },
       {
-        path: "/kritikdansaran",
+        path: "/RenzAura/kritikdansaran",
         element: <Form />,
-      },
-      {
-        path: "/RenzAura/",
-        element: <Root />,
       },
     ],
   },
