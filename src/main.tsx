@@ -90,7 +90,7 @@ const homeContentDatas: HomeContentDatas[] = [
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/RenzAura/",
     element: <Root />,
     errorElement: <NotFoundPage />,
     children: [
