@@ -122,6 +122,10 @@ const router = createBrowserRouter([
         path: "/kritikdansaran",
         element: <Form />,
       },
+      {
+        path: "/RenzAura/",
+        element: <Root />,
+      },
     ],
   },
   {
