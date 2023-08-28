@@ -23,7 +23,7 @@ https://ikhlasdansantai.github.io/RenzAura/
 <h2 align="left">Main Features</h2>
 
 ###
-   
+   - Fully Responsive
    - Dark Mode Available
    - Users Can View Product Details for Each Item
    - Social Media Integration
