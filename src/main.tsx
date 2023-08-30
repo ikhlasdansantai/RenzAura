@@ -14,6 +14,10 @@ import fashion3 from "./assets/Fashion/1.jpeg";
 import fashion4 from "./assets/Fashion/2.jpeg";
 import fashion5 from "./assets/Fashion/3.jpeg";
 import fashion6 from "./assets/Fashion/4.jpeg";
+import fashion7 from "./assets/Fashion/5.jpeg";
+import fashion8 from "./assets/Fashion/6.jpeg";
+import fashion9 from "./assets/Fashion/7.jpeg";
+
 import userImgProfile from "./assets/profile_users/368172058_200014439727799_4548607432220709411_n.jpg";
 import Foods from "./Pages/Foods/Foods";
 import MakeUp from "./Pages/MakeUp/MakeUp";
@@ -29,6 +33,7 @@ interface HomeContentDatas {
   link: string;
   size: string;
   id: number;
+  productLink: string;
 }
 const homeContentDatas: HomeContentDatas[] = [
   {
@@ -41,6 +46,7 @@ const homeContentDatas: HomeContentDatas[] = [
     link: "https://www.instagram.com/renz_aura/",
     size: "L",
     id: 2,
+    productLink: "https://shopee.co.id/blazer-i.19670999.21092114059?sp_atk=a3df80a7-c5f0-40d1-95e7-2b091ac92509&xptdk=a3df80a7-c5f0-40d1-95e7-2b091ac92509",
   },
   {
     imgPost: fashion3,
@@ -52,6 +58,7 @@ const homeContentDatas: HomeContentDatas[] = [
     link: "https://www.instagram.com/renz_aura/",
     size: "L",
     id: 3,
+    productLink: "empty",
   },
   {
     imgPost: fashion4,
@@ -63,6 +70,7 @@ const homeContentDatas: HomeContentDatas[] = [
     link: "https://www.instagram.com/renz_aura/",
     size: "L",
     id: 4,
+    productLink: "https://shopee.co.id/blazer-i.19670999.16998548005?sp_atk=460b0379-06f6-4b98-8449-b209d458ef24&xptdk=460b0379-06f6-4b98-8449-b209d458ef24",
   },
   {
     imgPost: fashion5,
@@ -74,6 +82,7 @@ const homeContentDatas: HomeContentDatas[] = [
     link: "https://www.instagram.com/renz_aura/",
     size: "L",
     id: 5,
+    productLink: "https://shopee.co.id/blazer-i.19670999.18583149423?sp_atk=f2c50bc0-a23b-4290-84a0-21dabee8af70&xptdk=f2c50bc0-a23b-4290-84a0-21dabee8af70",
   },
   {
     imgPost: fashion6,
@@ -85,6 +94,44 @@ const homeContentDatas: HomeContentDatas[] = [
     link: "https://www.instagram.com/renz_aura/",
     size: "L",
     id: 6,
+    productLink: "https://shopee.co.id/blazer-i.19670999.22477449822?sp_atk=7ea1203e-cdce-4586-a6d9-7d176b653ef1&xptdk=7ea1203e-cdce-4586-a6d9-7d176b653ef1",
+  },
+
+  {
+    imgPost: fashion7,
+    imgProfile: userImgProfile,
+    title: "Blazer",
+    desc: "Sebuah pakian yang bisa bikin kamu nyaman ketika menggunakannya, mendapatkan sebuah keharmonisan disetiap gesekannya, jadi tunggu apa lagi ayo buruan di borong.",
+    author: "Renz Aura",
+    price: 45_000,
+    link: "https://www.instagram.com/renz_aura/",
+    size: "L",
+    id: 7,
+    productLink: "empty",
+  },
+  {
+    imgPost: fashion8,
+    imgProfile: userImgProfile,
+    title: "Blazer",
+    desc: "Sebuah pakian yang bisa bikin kamu nyaman ketika menggunakannya, mendapatkan sebuah keharmonisan disetiap gesekannya, jadi tunggu apa lagi ayo buruan di borong.",
+    author: "Renz Aura",
+    price: 45_000,
+    link: "https://www.instagram.com/renz_aura/",
+    size: "L",
+    id: 8,
+    productLink: "https://shopee.co.id/blazer-i.19670999.22377271591?sp_atk=3d228217-dd4a-46b8-a21c-77d8ea71582f&xptdk=3d228217-dd4a-46b8-a21c-77d8ea71582f",
+  },
+  {
+    imgPost: fashion9,
+    imgProfile: userImgProfile,
+    title: "Blazer",
+    desc: "Sebuah pakian yang bisa bikin kamu nyaman ketika menggunakannya, mendapatkan sebuah keharmonisan disetiap gesekannya, jadi tunggu apa lagi ayo buruan di borong.",
+    author: "Renz Aura",
+    price: 25_000,
+    link: "https://www.instagram.com/renz_aura/",
+    size: "L",
+    id: 9,
+    productLink: "https://shopee.co.id/pakaian-i.19670999.22177291943?sp_atk=e3396a0d-a2fd-4240-b8ac-1f92fd00470a&xptdk=e3396a0d-a2fd-4240-b8ac-1f92fd00470a",
   },
 ];
 
