@@ -51,10 +51,6 @@ export default function CTAButton({ handleNavMobile, navMobileActive }: any): JS
     path: string;
   }
   const socialMediaIcon: SocialMediaIcon[] = [
-    // {
-    //   icon: "uiw:facebook",
-    //   path: "https://www.instagram.com/renz_aura/",
-    // },
     {
       icon: "cib:instagram",
       path: "https://www.instagram.com/renz_aura/",
@@ -62,6 +58,10 @@ export default function CTAButton({ handleNavMobile, navMobileActive }: any): JS
     {
       icon: "icomoon-free:whatsapp",
       path: "https://api.whatsapp.com/send?phone=6281214553067&text=Hi, saya tertarik untuk memasarkan produk saya di website Anda. Bagaimana caranya? Terima kasih!",
+    },
+    {
+      icon: "simple-icons:shopee",
+      path: "https://shopee.co.id/renili",
     },
   ];
 
