@@ -31,7 +31,7 @@ export default function ProductDetails({ product }: any) {
       });
     } else {
       Swal.fire({
-        title: "Sedang dialihkan ke Shoope",
+        title: "Sedang dialihkan ke Shopee",
         text: "Harap tunggu sejenak",
         icon: "info",
         allowOutsideClick: false,
