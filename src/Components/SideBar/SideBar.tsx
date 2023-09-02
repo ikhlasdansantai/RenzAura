@@ -49,19 +49,23 @@ export default function CTAButton({ handleNavMobile, navMobileActive }: any): JS
   interface SocialMediaIcon {
     icon: string;
     path: string;
+    label: string;
   }
   const socialMediaIcon: SocialMediaIcon[] = [
     {
       icon: "cib:instagram",
-      path: "https://www.instagram.com/renz_aura/",
+      path: "https//www.instagram.com/renz_aura/",
+      label: "Profil Instagram RenzAura",
     },
     {
       icon: "icomoon-free:whatsapp",
       path: "https://api.whatsapp.com/send?phone=6281214553067&text=Hi, saya tertarik untuk memasarkan produk saya di website Anda. Bagaimana caranya? Terima kasih!",
+      label: "Hubungi Kami Di Whatsapp",
     },
     {
       icon: "simple-icons:shopee",
       path: "https://shopee.co.id/renili",
+      label: "Toko Shopee Kami",
     },
   ];
 
@@ -98,7 +102,7 @@ export default function CTAButton({ handleNavMobile, navMobileActive }: any): JS
           <aside className={`${active ? "hidden" : "block"} px-4 sm:hidden pb-8`}>
             <nav>
               <ProfileCard />
-              <ul className="space-y-3 flex flex-col font-medium">
+              <div className="space-y-3 flex flex-col font-medium">
                 {navMenus.map((navMenu, index) => {
                   return (
                     <SidebarMenus key={index} icon={navMenu.icon} path={navMenu.path} onClick={handleNavMobile}>
@@ -106,7 +110,7 @@ export default function CTAButton({ handleNavMobile, navMobileActive }: any): JS
                     </SidebarMenus>
                   );
                 })}
-              </ul>
+              </div>
             </nav>
             <SocialMedia socialMediaIcons={socialMediaIcon} />
             <BetaMessage onClick={handleNavMobile} />

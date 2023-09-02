@@ -3,6 +3,7 @@ import { Icon } from "@iconify/react";
 interface SocialMediaIcon {
   icon: string;
   path: string;
+  label: string;
 }
 interface SocialMediaProps {
   socialMediaIcons: SocialMediaIcon[];
@@ -14,7 +15,7 @@ export default function SocialMedia({ socialMediaIcons }: SocialMediaProps): JSX
       <div className="socialMedia flex gap-4 items-center px-3 py-4">
         {socialMediaIcons.map((sosmed, index) => {
           return (
-            <a href={sosmed.path} key={index}>
+            <a href={sosmed.path} key={index} aria-label={sosmed.label}>
               <Icon icon={sosmed.icon} className="text-lg icon" />
             </a>
           );
