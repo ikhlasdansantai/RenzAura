@@ -11,7 +11,7 @@ interface SidebarMenuProps {
 
 export default function SidebarMenus({ icon, path, children, onClick }: SidebarMenuProps): JSX.Element {
   const location = useLocation();
-  const isNavMatching = `/RenzAura${path}` === location.pathname;
+  const isNavMatching = `${path}/` === location.pathname;
   const [darkMode, toggleDarkMode] = useState(false);
 
   useEffect(() => {
@@ -53,7 +53,7 @@ export default function SidebarMenus({ icon, path, children, onClick }: SidebarM
   };
 
   return (
-    <Link to={`/RenzAura${path}`} onClick={() => handleStateChange()}>
+    <Link to={`${path}/`} onClick={() => handleStateChange()}>
       <div
         className={`${
           isNavMatching ? "bg-gray-100 text-gray-900 hover:bg-gray-100 dark:hover:text-gray-50 dark:bg-gray-700 dark:text-white dark:hover:bg-gray-700" : ""
