@@ -1,13 +1,6 @@
 import { Link } from "react-router-dom";
 import Title from "../../Components/Title/Title";
-// interface HomeContentDatasProps {
-//   imgPost: string;
-//   imgProfile: string;
-//   author: string;
-//   date: string;
-//   link: string;
-//   id: number;
-// }
+
 export default function Fashion({ items }: any): JSX.Element {
   return (
     <div id="home" className="min-h-screen">
