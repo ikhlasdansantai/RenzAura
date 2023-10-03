@@ -154,14 +154,14 @@ const makeupContentDatas: MakeupContentDatas[] = [
     title: "Paket Makeup Only",
     desc: "Dengan paket ini, Anda akan terlihat luar biasa di setiap momen istimewa dalam hidup Anda. Percayakan tampilan Anda kepada para profesional kami dan biarkan kami mengekspresikan kecantikan Anda dengan sentuhan yang benar-benar khusus.",
     roles: [{ roleName: "Makeup", roleColor: "bg-purple-400" }],
-    price: 200_000,
+    price: 2_499_99,
   },
   {
     bannerIMG: bannerIMG,
     title: "Paket Bride Only",
     desc: "Dengan paket ini, Anda akan merasa dirayakan, cantik, dan siap untuk menghadapi hari pernikahan Anda dengan percaya diri dan anggun. Biarkan kami merawat detailnya sehingga Anda dapat fokus pada momen berharga ini tanpa khawatir.",
     roles: [{ roleName: "Makeup", roleColor: "bg-purple-400" }],
-    price: 4_999_999,
+    price: 4_999_99,
   },
   {
     bannerIMG: bannerIMG,
@@ -172,7 +172,7 @@ const makeupContentDatas: MakeupContentDatas[] = [
       { roleName: "MC", roleColor: "bg-red-400" },
       { roleName: "Makeup", roleColor: "bg-purple-400" },
     ],
-    price: 2_999_999,
+    price: 2_999_99,
   },
   {
     bannerIMG: bannerIMG,
@@ -185,7 +185,7 @@ const makeupContentDatas: MakeupContentDatas[] = [
       { roleName: "Makeup Pager Ayu 2", roleColor: "bg-purple-400" },
       { roleName: "Makeup", roleColor: "bg-purple-400" },
     ],
-    price: 7_999_999,
+    price: 7_999_99,
   },
   {
     bannerIMG: bannerIMG,
@@ -200,7 +200,7 @@ const makeupContentDatas: MakeupContentDatas[] = [
       { roleName: "MC", roleColor: "bg-red-400" },
       { roleName: "Makeup", roleColor: "bg-purple-400" },
     ],
-    price: 19_999_999,
+    price: 19_999_99,
   },
   {
     bannerIMG: bannerIMG,
@@ -216,7 +216,7 @@ const makeupContentDatas: MakeupContentDatas[] = [
       { roleName: "MC", roleColor: "bg-red-400" },
       { roleName: "Makeup", roleColor: "bg-purple-400" },
     ],
-    price: 25_999_999,
+    price: 25_999_99,
   },
 ];
 
