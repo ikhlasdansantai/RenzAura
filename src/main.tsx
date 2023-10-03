@@ -9,6 +9,7 @@ import AboutUs from "./Pages/AboutUs/AboutUs";
 import Fashion from "./Pages/Fashion/Fashion";
 import ProductDetails from "./Pages/ProductDetails/ProductDetails";
 
+// Handle Fashion
 import fashion2 from "./assets/instagram_post/2.webp";
 import fashion3 from "./assets/Fashion/1.jpeg";
 import fashion4 from "./assets/Fashion/2.jpeg";
@@ -18,6 +19,10 @@ import fashion7 from "./assets/Fashion/5.jpeg";
 import fashion8 from "./assets/Fashion/6.jpeg";
 import fashion9 from "./assets/Fashion/7.jpeg";
 
+// Handle Makeup
+import bannerIMG from "./assets/banner.jpeg";
+
+// Handle Router
 import userImgProfile from "./assets/profile_users/368172058_200014439727799_4548607432220709411_n.jpg";
 import Foods from "./Pages/Foods/Foods";
 import MakeUp from "./Pages/MakeUp/MakeUp";
@@ -135,6 +140,89 @@ const homeContentDatas: HomeContentDatas[] = [
   },
 ];
 
+interface MakeupContentDatas {
+  bannerIMG: string;
+  title: string;
+  desc: string;
+  roles: any;
+  price: number;
+}
+
+const makeupContentDatas: MakeupContentDatas[] = [
+  {
+    bannerIMG: bannerIMG,
+    title: "Paket Makeup Only",
+    desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam itaque exercitationem eius ducimus, officia incidunt neque sit. Qui, illo odio?",
+    roles: [{ roleName: "Makeup", roleColor: "bg-purple-400" }],
+    price: 200_000,
+  },
+  {
+    bannerIMG: bannerIMG,
+    title: "Paket Bride Only",
+    desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam itaque exercitationem eius ducimus, officia incidunt neque sit. Qui, illo odio?",
+    roles: [
+      { roleName: "MC", roleColor: "bg-red-400" },
+      { roleName: "Makeup", roleColor: "bg-purple-400" },
+    ],
+    price: 4_999_999,
+  },
+  {
+    bannerIMG: bannerIMG,
+    title: "Paket Prewedding",
+    desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam itaque exercitationem eius ducimus, officia incidunt neque sit. Qui, illo odio?",
+    roles: [
+      { roleName: "Dokumentasi", roleColor: "bg-green-400" },
+      { roleName: "MC", roleColor: "bg-red-400" },
+      { roleName: "Makeup", roleColor: "bg-purple-400" },
+    ],
+    price: 2_999_999,
+  },
+  {
+    bannerIMG: bannerIMG,
+    title: "Paket Simple",
+    desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam itaque exercitationem eius ducimus, officia incidunt neque sit. Qui, illo odio?",
+    roles: [
+      { roleName: "Dokumentasi", roleColor: "bg-green-400" },
+      { roleName: "MC", roleColor: "bg-red-400" },
+      { roleName: "Makeup Ibu 2", roleColor: "bg-purple-400" },
+      { roleName: "Makeup Pager Ayu 2", roleColor: "bg-purple-400" },
+      { roleName: "Makeup", roleColor: "bg-purple-400" },
+    ],
+    price: 7_999_999,
+  },
+  {
+    bannerIMG: bannerIMG,
+    title: "Paket Bronze",
+    desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam itaque exercitationem eius ducimus, officia incidunt neque sit. Qui, illo odio?",
+    roles: [
+      { roleName: "Dekorasi Modern", roleColor: "bg-orange-400" },
+      { roleName: "Stand & Parasmanan", roleColor: "bg-yellow-500" },
+      { roleName: "Dokumentasi", roleColor: "bg-green-400" },
+      { roleName: "Makeup Pager Ayu 4", roleColor: "bg-purple-600" },
+      { roleName: "Makeup Ibu 2", roleColor: "bg-purple-400" },
+      { roleName: "MC", roleColor: "bg-red-400" },
+      { roleName: "Makeup", roleColor: "bg-purple-400" },
+    ],
+    price: 19_999_999,
+  },
+  {
+    bannerIMG: bannerIMG,
+    title: "Paket Silver",
+    desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam itaque exercitationem eius ducimus, officia incidunt neque sit. Qui, illo odio?",
+    roles: [
+      { roleName: "Entertainment", roleColor: "bg-blue-500" },
+      { roleName: "Stand & Parasmanan", roleColor: "bg-yellow-500" },
+      { roleName: "Dekorasi Modern", roleColor: "bg-orange-400" },
+      { roleName: "Dokumentasi", roleColor: "bg-green-400" },
+      { roleName: "Makeup Pager Ayu 4", roleColor: "bg-purple-600" },
+      { roleName: "Makeup Ibu 2", roleColor: "bg-purple-400" },
+      { roleName: "MC", roleColor: "bg-red-400" },
+      { roleName: "Makeup", roleColor: "bg-purple-400" },
+    ],
+    price: 25_999_999,
+  },
+];
+
 const router = createBrowserRouter([
   {
     path: "/RenzAura/",
@@ -163,7 +251,7 @@ const router = createBrowserRouter([
       },
       {
         path: "jasaMakeup",
-        element: <MakeUp />,
+        element: <MakeUp items={makeupContentDatas} />,
       },
       {
         path: "kritikdansaran",
