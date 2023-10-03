@@ -13,7 +13,7 @@ export default function MakeUp({ items }: any): JSX.Element {
           <Title>Jasa Makeup kami</Title>
           <p className="text-secondText mt-2">Kami juga menyediakan berbagai jasa makeup, mulai dari jasa makeup pengantin, jasa sewa dekorasi, sewa MC dan masih banyak lagi, jadi tunggu apalagi? yuuu sewa jasa makeup kami </p>
         </div>
-        <div className="cards grid grid-cols-1 min-[950px]:grid-cols-2 xl:grid-cols-3 mt-20 mb-10 gap-10">
+        <div className="cards grid grid-cols-1 min-[950px]:grid-cols-2 xl:grid-cols-3 min-[2000px]:grid-cols-4 mt-20 mb-10 gap-10">
           {items.map((items: any, index: number) => {
             return (
               <div key={index} className="card flex flex-col gap-4 bg-white p-6  rounded-lg border border-slate-600 dark:border-0">

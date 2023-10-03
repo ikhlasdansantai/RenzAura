@@ -152,24 +152,21 @@ const makeupContentDatas: MakeupContentDatas[] = [
   {
     bannerIMG: bannerIMG,
     title: "Paket Makeup Only",
-    desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam itaque exercitationem eius ducimus, officia incidunt neque sit. Qui, illo odio?",
+    desc: "Dengan paket ini, Anda akan terlihat luar biasa di setiap momen istimewa dalam hidup Anda. Percayakan tampilan Anda kepada para profesional kami dan biarkan kami mengekspresikan kecantikan Anda dengan sentuhan yang benar-benar khusus.",
     roles: [{ roleName: "Makeup", roleColor: "bg-purple-400" }],
     price: 200_000,
   },
   {
     bannerIMG: bannerIMG,
     title: "Paket Bride Only",
-    desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam itaque exercitationem eius ducimus, officia incidunt neque sit. Qui, illo odio?",
-    roles: [
-      { roleName: "MC", roleColor: "bg-red-400" },
-      { roleName: "Makeup", roleColor: "bg-purple-400" },
-    ],
+    desc: "Dengan paket ini, Anda akan merasa dirayakan, cantik, dan siap untuk menghadapi hari pernikahan Anda dengan percaya diri dan anggun. Biarkan kami merawat detailnya sehingga Anda dapat fokus pada momen berharga ini tanpa khawatir.",
+    roles: [{ roleName: "Makeup", roleColor: "bg-purple-400" }],
     price: 4_999_999,
   },
   {
     bannerIMG: bannerIMG,
     title: "Paket Prewedding",
-    desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam itaque exercitationem eius ducimus, officia incidunt neque sit. Qui, illo odio?",
+    desc: "Dengan paket ini, Anda dapat mengabadikan kisah cinta Anda sebelum pernikahan dengan indah. Percayakan kepada kami untuk menciptakan momen-momen yang tak terlupakan, yang akan Anda kenang sepanjang hidup Anda.",
     roles: [
       { roleName: "Dokumentasi", roleColor: "bg-green-400" },
       { roleName: "MC", roleColor: "bg-red-400" },
@@ -180,7 +177,7 @@ const makeupContentDatas: MakeupContentDatas[] = [
   {
     bannerIMG: bannerIMG,
     title: "Paket Simple",
-    desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam itaque exercitationem eius ducimus, officia incidunt neque sit. Qui, illo odio?",
+    desc: "Kami menyediakan solusi yang sederhana namun indah untuk hari istimewa Anda. Dengan Paket ini, Anda akan merasa cantik dan percaya diri tanpa perlu repot. Hubungi kami sekarang untuk informasi lebih lanjut.",
     roles: [
       { roleName: "Dokumentasi", roleColor: "bg-green-400" },
       { roleName: "MC", roleColor: "bg-red-400" },
@@ -193,7 +190,7 @@ const makeupContentDatas: MakeupContentDatas[] = [
   {
     bannerIMG: bannerIMG,
     title: "Paket Bronze",
-    desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam itaque exercitationem eius ducimus, officia incidunt neque sit. Qui, illo odio?",
+    desc: "Paket ini adalah pilihan yang sempurna untuk pasangan yang menginginkan kombinasi keindahan visual dan kenangan yang tak terlupakan dalam pernikahan mereka. Kami menyediakan paket ini untuk memberikan pengalaman pernikahan yang lebih lengkap.",
     roles: [
       { roleName: "Dekorasi Modern", roleColor: "bg-orange-400" },
       { roleName: "Stand & Parasmanan", roleColor: "bg-yellow-500" },
@@ -208,7 +205,7 @@ const makeupContentDatas: MakeupContentDatas[] = [
   {
     bannerIMG: bannerIMG,
     title: "Paket Silver",
-    desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam itaque exercitationem eius ducimus, officia incidunt neque sit. Qui, illo odio?",
+    desc: "Dengan ini, Anda dapat menghadirkan pernikahan yang mewah dan tak tentunya tidak terlupakan. Hubungi kami sekarang untuk informasi lebih lanjut dan untuk merencanakan pernikahan yang penuh kenangan.",
     roles: [
       { roleName: "Entertainment", roleColor: "bg-blue-500" },
       { roleName: "Stand & Parasmanan", roleColor: "bg-yellow-500" },
